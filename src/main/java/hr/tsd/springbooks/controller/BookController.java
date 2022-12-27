@@ -28,7 +28,7 @@ public class BookController {
         System.out.println(book+" updated...");
     }
     @DeleteMapping("/")
-    public void update1Book(@RequestBody int id){
+    public void deleteBook(@RequestBody int id){
         try {
             bookRepo.deleteById(id);
             System.out.println(" deleted...");
